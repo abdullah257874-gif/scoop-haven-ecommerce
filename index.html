@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Scoop Haven is a premium ice cream shop offering handcrafted scoops, sundaes, gelato, vegan desserts, and artisanal flavors."
+    />
+    <title>Scoop Haven | Premium Ice Cream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Scoop Haven home">
+          <span class="brand-mark">S</span>
+          <span>Scoop Haven</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#flavors">Flavors</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.95 12.8l4.25 4.25 1.4-1.4-4.25-4.25A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="cart-toggle" aria-label="Open cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 9.2A2 2 0 009.1 15h8.8a2 2 0 001.9-1.5L21 7H7.2l-.5-2.1A2 2 0 004.8 3H3zm5 15a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm9 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">Freshly scooped daily</span>
+            <h1>Sweet joy in every scoop.</h1>
+            <p>
+              Premium handcrafted ice cream made with real ingredients, rich textures,
+              and bold flavors designed to turn every craving into a celebration.
+            </p>
+            <div class="hero-actions">
+              <a href="#flavors" class="button button-primary">Order Now</a>
+              <a href="#about" class="button button-secondary">Our Story</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>25k+</strong><span>happy scoops</span></li>
+              <li><strong>18</strong><span>signature flavors</span></li>
+              <li><strong>4.9/5</strong><span>customer rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Ice cream showcase">
+            <div class="hero-card large-card">
+              <img
+                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80"
+                alt="Ice cream in a cup"
+              />
+            </div>
+            <div class="floating-card card-top">
+              <span class="mini-label">Best Seller</span>
+              <h3>Berry Bliss</h3>
+              <p>Fresh berries + creamy vanilla</p>
+            </div>
+            <div class="floating-card card-bottom">
+              <div class="score">
+                <strong>4.9</strong>
+                <span>★★★★★</span>
+              </div>
+              <small>Top rated this month</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-inner">
+          <span>Locally sourced dairy</span>
+          <span>Small batch craft</span>
+          <span>No preservatives</span>
+          <span>100% homemade</span>
+        </div>
+      </section>
+
+      <section class="category-showcase container" aria-label="Flavor categories">
+        <div class="section-heading">
+          <span class="eyebrow">Shop by mood</span>
+          <h2>Find your perfect flavor</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="category-icon">🍦</div>
+            <h3>Classic</h3>
+            <p>Timeless favorites with creamy richness.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-icon">🥭</div>
+            <h3>Fruit Burst</h3>
+            <p>Bright, juicy, and naturally refreshing.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-icon">🌱</div>
+            <h3>Vegan</h3>
+            <p>Coconut-based indulgence, no compromise.</p>
+          </article>
+          <article class="category-card">
+            <div class="category-icon">🍫</div>
+            <h3>Decadent</h3>
+            <p>Chocolate-packed combos built for dessert lovers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="flavors" class="products-section">
+        <div class="container">
+          <div class="section-heading row-heading">
+            <div>
+              <span class="eyebrow">Menu</span>
+              <h2>Handcrafted favorites</h2>
+            </div>
+            <div class="toolbar">
+              <div id="categoryFilters" class="filter-group" aria-label="Product filters"></div>
+              <label class="search-wrap" aria-label="Search flavors">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.95 12.8l4.25 4.25 1.4-1.4-4.25-4.25A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+                <input id="searchInput" type="search" placeholder="Search flavors..." />
+              </label>
+            </div>
+          </div>
+
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="benefits container">
+        <div class="section-heading">
+          <span class="eyebrow">Why choose us</span>
+          <h2>Made with heart, served with joy</h2>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="icon-wrap">🥛</div>
+            <h3>Locally sourced dairy</h3>
+            <p>Fresh cream and milk from trusted local farms.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="icon-wrap">🍓</div>
+            <h3>Fresh fruit blends</h3>
+            <p>Seasonal fruit and premium ingredients in every batch.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="icon-wrap">👩‍🍳</div>
+            <h3>Small-batch craftsmanship</h3>
+            <p>Each flavor is carefully churned for rich texture and taste.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="icon-wrap">🚚</div>
+            <h3>Fast local delivery</h3>
+            <p>Fresh from our freezer to your doorstep in no time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container about-inner">
+          <div class="about-visual">
+            <img
+              src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+              alt="Ice cream cone close-up"
+            />
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">Our story</span>
+            <h2>Born from a love of homemade sweetness</h2>
+            <p>
+              Scoop Haven started with a simple mission: create a dessert experience that
+              feels joyful, handcrafted, and deeply satisfying. We work with fresh, high-quality
+              ingredients and turn classic recipes into memorable favorites for every season.
+            </p>
+            <div class="stat-list">
+              <div>
+                <strong>8+</strong>
+                <span>Years crafting premium treats</span>
+              </div>
+              <div>
+                <strong>32</strong>
+                <span>Rotating seasonal recipes</span>
+              </div>
+              <div>
+                <strong>1M+</strong>
+                <span>Scoops served with a smile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Reviews</span>
+            <h2>Loved by our community</h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The vanilla bean swirl is amazing. Perfect texture and truly rich flavor.”</p>
+              <div class="reviewer">
+                <strong>Amelia R.</strong>
+                <span>Repeat customer</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The chocolate hazelnut scoop tastes like a luxury dessert. Absolutely worth it.”</p>
+              <div class="reviewer">
+                <strong>Daniel M.</strong>
+                <span>Café regular</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“Delivery was quick, the packaging was neat, and the ice cream stayed perfectly frozen.”</p>
+              <div class="reviewer">
+                <strong>Sophia K.</strong>
+                <span>Local foodie</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Gallery</span>
+            <h2>Sweet moments, captured</h2>
+          </div>
+          <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1570197788417-0e823ef4b095?auto=format&fit=crop&w=600&q=80" alt="Ice cream sundae" />
+            <img src="https://images.unsplash.com/photo-1560008581-09826d1de69f?auto=format&fit=crop&w=600&q=80" alt="Scoops in basket" />
+            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=600&q=80" alt="Ice cream cone" />
+            <img src="https://images.unsplash.com/photo-1525059696034-4967a729002e?auto=format&fit=crop&w=600&q=80" alt="Colorful dessert" />
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="container newsletter-box">
+          <div>
+            <span class="eyebrow">Join the scoop club</span>
+            <h2>Get fresh new flavors and member offers.</h2>
+          </div>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+            <button type="submit" class="button button-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-mark">S</span>
+            <span>Scoop Haven</span>
+          </a>
+          <p>Crafted scoops for every sweet moment.</p>
+        </div>
+
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Visit us</h3>
+          <ul>
+            <li>245 Sweet Lane</li>
+            <li>Downtown Market</li>
+            <li>(555) 210-2847</li>
+            <li>hello@scoophaven.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Hours</h3>
+          <ul>
+            <li>Mon–Thu: 10am–9pm</li>
+            <li>Fri–Sat: 10am–11pm</li>
+            <li>Sun: 11am–8pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Scoop Haven. All rights reserved.</span>
+        <div class="socials" aria-label="Social media links">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">◌</a>
+          <a href="#" aria-label="X">✕</a>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="drawer-header">
+        <h3>Your Cart</h3>
+        <button class="close-drawer" aria-label="Close cart">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong id="subtotalPrice">$0.00</strong></div>
+        <div><span>Tax</span><strong id="taxPrice">$0.00</strong></div>
+        <div><span>Delivery</span><strong id="deliveryPrice">$0.00</strong></div>
+        <div class="total-row"><span>Total</span><strong id="totalPrice">$0.00</strong></div>
+      </div>
+      <button id="checkoutBtn" class="button button-primary checkout-button">Proceed to Checkout</button>
+    </aside>
+
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+
+    <div class="modal" id="checkoutModal" aria-modal="true" role="dialog" aria-labelledby="checkoutTitle">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 id="checkoutTitle">Checkout</h3>
+          <button class="close-modal" aria-label="Close checkout">×</button>
+        </div>
+
+        <form id="checkoutForm" class="checkout-form">
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Address
+              <input type="text" name="address" required />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" required />
+            </label>
+            <label>
+              ZIP Code
+              <input type="text" name="zip" required />
+            </label>
+          </div>
+
+          <div class="payment-box">
+            <h4>Payment Method</h4>
+            <label class="radio-row"><input type="radio" name="payment" value="Card" checked /> Credit Card</label>
+            <label class="radio-row"><input type="radio" name="payment" value="Cash" /> Cash on Delivery</label>
+          </div>
+
+          <button type="submit" class="button button-primary submit-button">Place Order</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
